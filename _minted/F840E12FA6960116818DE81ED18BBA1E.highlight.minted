@@ -1,7 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{+w}{	}\PYG{n}{returnType}\PYG{+w}{ }\PYG{n+nf}{functionName}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{c+cm}{/* This is the function header}
-\PYG{c+cm}{	(tells the compiler about the existence of the function)*/}
-\PYG{+w}{	}\PYG{p}{\PYGZob{}}
-\PYG{+w}{		}\PYG{c+c1}{// This is the function body (tells the compiler what the function does)}
-\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
-\end{MintedVerbatim}
