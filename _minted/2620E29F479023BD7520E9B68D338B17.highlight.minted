@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{c+cm}{/* This is a multi\PYGZhy{}line comment.}
+\PYG{c+cm}{	* the matching asterisks to the left}
+\PYG{c+cm}{	* can make this easier to read}
+\PYG{c+cm}{	*/}
+\end{MintedVerbatim}

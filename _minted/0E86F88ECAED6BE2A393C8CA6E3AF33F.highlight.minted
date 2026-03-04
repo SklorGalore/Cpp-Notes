@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{;}\PYG{+w}{         }\PYG{c+c1}{// default\PYGZhy{}initialization (no initializer)}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// Traditional initialization forms:}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{// copy\PYGZhy{}initialization (initial value after equals sign)}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{c}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{+w}{ }\PYG{p}{)}\PYG{p}{;}\PYG{+w}{   }\PYG{c+c1}{// direct\PYGZhy{}initialization (initial value in parenthesis)}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// Modern initialization forms (preferred):}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{d}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{p}{;}\PYG{+w}{   }\PYG{c+c1}{// direct\PYGZhy{}list\PYGZhy{}initialization (initial value in braces)}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{e}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}\PYG{+w}{      }\PYG{c+c1}{// value\PYGZhy{}initialization (empty braces)}
+\end{MintedVerbatim}
