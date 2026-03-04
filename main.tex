@@ -53,6 +53,58 @@ Variables do not need a value when they are declared, but \textit{can} be given 
 	int e {};      // value-initialization (empty braces)
 \end{minted}
 
+\subsection{Common Types}
+
+\begin{table}[]
+	\caption{}
+	\label{tab:my-table}
+	\begin{tabular}{@{}lll@{}}
+		\toprule
+		\rowcolor[HTML]{E0E0E0} 
+		\textbf{Group}                                                     & \textbf{Type names*}            & \textbf{Notes on size / precision}                                                 \\ \midrule
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{char}                   & Exactly one byte in size. At least 8 bits.                                         \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{char16\_t}              & Not smaller than char. At least 16 bits.                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{char32\_t}              & Not smaller than char16\_t. At least 32 bits.                                      \\
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}Character types}          & \textbf{wchar\_t}               & Can represent the largest supported character set.                                 \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{signed char}            & Same size as char. At least 8 bits.                                                \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textit{signed short int}       & Not smaller than char. At least 16 bits.                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textit{signed int}             & Not smaller than short. At least 16 bits.                                          \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textit{signed long int}        & Not smaller than int. At least 32 bits.                                            \\
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}Integer types (signed)}   & \textit{signed long long int}   & Not smaller than long. At least 64 bits.                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{unsigned char}          & \cellcolor[HTML]{FFFFFF}                                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{unsigned short int}     & \cellcolor[HTML]{FFFFFF}                                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{unsigned int}           & \cellcolor[HTML]{FFFFFF}                                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{unsigned long int}      & \cellcolor[HTML]{FFFFFF}                                                           \\
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}Integer types (unsigned)} & \textbf{unsigned long long int} & \multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}(same size as their signed counterparts)} \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{float}                  &                                                                                    \\
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                                           & \textbf{double}                 & Precision not less than float                                                      \\
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Floating-point types}     & \textbf{long double}            & Precision not less than double                                                     \\
+		\rowcolor[HTML]{FFFFFF} 
+		Boolean type                                                       & \textbf{bool}                   &                                                                                    \\
+		\rowcolor[HTML]{FFFFFF} 
+		Void type                                                          & \textbf{void}                   & no storage                                                                         \\
+		\rowcolor[HTML]{FFFFFF} 
+		Null pointer                                                       & \textbf{decltype(nullptr)}      &                                                                                    \\ \bottomrule
+	\end{tabular}
+\end{table}
+
 \section{Functions}
 
 \subsection{Function Declaration}
