@@ -61,56 +61,27 @@ Variables do not need a value when they are declared, but \textit{can} be given 
 	\label{tab:my-table}
 	\begin{tabular}{@{}lll@{}}
 		\toprule
-		\rowcolor[HTML]{E0E0E0} 
-		\textbf{Group}           & \textbf{Type names*}        & \textbf{Notes on size / precision}            \\ \midrule
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{char}               & Exactly one byte in size. At least 8 bits.    \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{char16\_t}          & Not smaller than char. At least 16 bits.      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{char32\_t}          & Not smaller than char16\_t. At least 32 bits. \\
-		\rowcolor[HTML]{FFFFFF} 
-		\multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}Character types} &
-		\textbf{wchar\_t} &
-		Can represent the largest supported character set. \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{signed char}        & Same size as char. At least 8 bits.           \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textit{signed short int}   & Not smaller than char. At least 16 bits.      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textit{signed int}         & Not smaller than short. At least 16 bits.     \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textit{signed long int}    & Not smaller than int. At least 32 bits.       \\
-		\rowcolor[HTML]{FFFFFF} 
-		\multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}Integer types (signed)} &
-		\textit{signed long long int} &
-		Not smaller than long. At least 64 bits. \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{unsigned char}      & \cellcolor[HTML]{FFFFFF}                      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{unsigned short int} & \cellcolor[HTML]{FFFFFF}                      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{unsigned int}       & \cellcolor[HTML]{FFFFFF}                      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{unsigned long int}  & \cellcolor[HTML]{FFFFFF}                      \\
-		\rowcolor[HTML]{FFFFFF} 
-		\multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}Integer types (unsigned)} &
-		\textbf{unsigned long long int} &
-		\multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}(same size as their signed counterparts)} \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{float}              &                                               \\
-		\rowcolor[HTML]{FFFFFF} 
-		\cellcolor[HTML]{FFFFFF} & \textbf{double}             & Precision not less than float                 \\
-		\rowcolor[HTML]{FFFFFF} 
-		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Floating-point types} &
-		\textbf{long double} &
-		Precision not less than double \\
-		\rowcolor[HTML]{FFFFFF} 
-		Boolean type             & \textbf{bool}               &                                               \\
-		\rowcolor[HTML]{FFFFFF} 
-		Void type                & \textbf{void}               & no storage                                    \\
-		\rowcolor[HTML]{FFFFFF} 
-		Null pointer             & \textbf{decltype(nullptr)}  &                                               \\ \bottomrule
+		\textbf{Group}                        & \textbf{Type names*}               & \textbf{Notes on size / precision}                 \\ \midrule
+		\multirow{4}{*}{Character types}          & \textbf{char}                          & Exactly one byte in size. At least 8 bits.                \\
+		& \textbf{char16\_t}                 & Not smaller than char. At least 16 bits.           \\
+		& \textbf{char32\_t}                 & Not smaller than char16\_t. At least 32 bits.      \\
+		& \textbf{wchar\_t}                  & Can represent the largest supported character set. \\
+		\multirow{5}{*}{Integer types (signed)}   & \textbf{signed char}                   & Same size as char. At least 8 bits.                       \\
+		& \textit{\textbf{signed short int}} & Not smaller than char. At least 16 bits.           \\
+		& \textit{\textbf{signed int}}       & Not smaller than short. At least 16 bits.          \\
+		& \textit{\textbf{signed long int}}  & Not smaller than int. At least 32 bits.            \\
+		& \textit{\textbf{signed long long int}} & Not smaller than long. At least 64 bits.                  \\
+		\multirow{5}{*}{Integer types (unsigned)} & \textbf{unsigned char}                 & \multirow{5}{*}{(same size as their signed counterparts)} \\
+		& \textbf{unsigned short int}        &                                                    \\
+		& \textbf{unsigned int}              &                                                    \\
+		& \textbf{unsigned long int}         &                                                    \\
+		& \textbf{unsigned long long int}    &                                                    \\
+		\multirow{3}{*}{Floating-point types} & \textbf{float}                     &                                                    \\
+		& \textbf{double}                    & Precision not less than float                      \\
+		& \textbf{long double}               & Precision not less than double                     \\
+		Boolean type                          & \textbf{bool}                      &                                                    \\
+		Void type                             & \textbf{void}                      & no storage                                         \\
+		Null pointer                          & \textbf{decltype(nullptr)}         &                                                    \\ \bottomrule
 	\end{tabular}
 \end{table}
 \section{Functions}
