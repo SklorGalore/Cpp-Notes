@@ -73,6 +73,32 @@ Functions are declared with a return type and an identifier, along with the argu
 Functions can call other functions, but a function can not be defined within another one.
 Functions can either return a value, or not (void).
 Main must always return an integer (int) which is known as a status code that can be used to indicate whether or not the code performed as it should have.
+
+\subsection{Function Parameters}
+
+Function parameters are defined when the function is declared
+\begin{minted}[linenos, style=autumn]{cpp}
+	// This function takes no parameters
+	// It does not rely on the caller for anything
+	void doPrint()
+	{
+		std::cout << "In doPrint()\n";
+	}
+	
+	// This function takes one integer parameter named x
+	// The caller will supply the value of x
+	void printValue(int x)
+	{
+		std::cout << x << '\n';
+	}
+	
+	// This function has two integer parameters, one named x, and one named y
+	// The caller will supply the value of both x and y
+	int add(int x, int y)
+	{
+		return x + y;
+	}
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
