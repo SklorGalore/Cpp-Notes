@@ -28,7 +28,9 @@ Multi-line comments are done with "/*...*/"
 \section{Variable Declaration and Assignment}
 
 Variables are declared using their type and identifier
+
 \pagebreak
+
 \begin{minted}[linenos, style=autumn]{cpp}
 	int main()
 	{
@@ -39,6 +41,19 @@ Variables are declared using their type and identifier
 	}
 \end{minted}
 
+Variables do not need a value when they are declared, but \textit{can} be given one if it makes sense
+
+\begin{minted}[linenos, style=autumn]{cpp}
+	int a;         // default-initialization (no initializer)
+	
+	// Traditional initialization forms:
+	int b = 5;     // copy-initialization (initial value after equals sign)
+	int c ( 6 );   // direct-initialization (initial value in parenthesis)
+	
+	// Modern initialization forms (preferred):
+	int d { 7 };   // direct-list-initialization (initial value in braces)
+	int e {};      // value-initialization (empty braces)
+\end{minted}
 % ---------------------------- 
 \printindex
 \end{document}
